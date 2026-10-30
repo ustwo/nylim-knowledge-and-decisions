@@ -1,0 +1,15 @@
+
+# Subject: type(scope): what changed, lowercase, imperative, no period
+#   docs: record the answers from the kickoff
+#   docs(decisions): accept PRD-02, the first journeys
+#   docs(findings): add FND-012 to FND-019 from SRC-04, the kickoff deck
+#   docs(hypotheses): log HYP-05, the client's view on cross-selling
+#
+# Body: what changed and why. Name the decisions, hypotheses and findings by ID.
+# Don't edit docs/_generated/ by hand: it's regenerated on every push to main.
+#
+# Keep the section below when the change affects what design or the
+# build should do, with a bullet for each change. Delete it otherwise.
+
+What this means for design and the build:
+-

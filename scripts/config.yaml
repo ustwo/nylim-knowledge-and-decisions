@@ -1,0 +1,36 @@
+# Settings for scripts/evidence.py. What each one means is in docs/scales.md.
+# Change them here, and say why in the commit.
+
+# How much a finding counts, by its trust score.
+trust_weights: {1: 0.5, 2: 1, 3: 2, 4: 3, 5: 4}
+
+# Strength is the total weight, capped here.
+strength_cap: 5
+
+# Share of the weight that supports a claim, for each verdict.
+supported_from: 0.7      # at or above: supported
+contradicted_below: 0.3  # at or below: contradicted. Between: contested
+
+# Impact taken from an objective's rank in success.md.
+impact_from_rank: {north-star: 5, primary: 4, secondary: 3, tertiary: 2}
+default_impact: 3        # used for ranking when nothing sets an impact
+
+# The three lists in _generated/evidence.md.
+test_next_below_strength: 3      # hypotheses weaker than this can go on Test next
+build_on_from_strength: 3        # supported hypotheses at least this strong go on Build on
+respond_from_contradicting: 2    # contested claims need this much contradicting weight to need a response
+conviction_flag_from: 4          # starting confidence that gets flagged when contradicted
+list_length: 10
+
+# Count findings still marked reviewed: false? Keep false on main.
+count_unreviewed: false
+
+# Flag seeds that have waited longer than this many days.
+seed_review_days: 30
+
+# The fixed vocabularies.
+stages: [activate, motivate, sustain, change]
+frames: [user, product, business, market]
+evidence_types: [analytics, survey, test, interview, stakeholder, desk, audit]
+held_by: [client, ustwo]
+ranks: [north-star, primary, secondary, tertiary]

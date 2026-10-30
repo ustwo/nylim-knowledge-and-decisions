@@ -1,0 +1,274 @@
+{
+  "items": {
+    "BIZ-01": {
+      "id": "BIZ-01",
+      "type": "decision",
+      "path": "decisions/business/BIZ-01.md",
+      "title": "BIZ-01",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "BIZ-02": {
+      "id": "BIZ-02",
+      "type": "decision",
+      "path": "decisions/business/BIZ-02.md",
+      "title": "BIZ-02",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "DES-01": {
+      "id": "DES-01",
+      "type": "decision",
+      "path": "decisions/design/DES-01.md",
+      "title": "DES-01",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "DES-02": {
+      "id": "DES-02",
+      "type": "decision",
+      "path": "decisions/design/DES-02.md",
+      "title": "If there's a design system, where do its values come from, and who changes them?",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "DES-03": {
+      "id": "DES-03",
+      "type": "decision",
+      "path": "decisions/design/DES-03.md",
+      "title": "DES-03",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "KPI-01": {
+      "id": "KPI-01",
+      "type": "kpi",
+      "path": "success.md",
+      "title": "KPI-01",
+      "objective": "OBJ-01"
+    },
+    "KPI-02": {
+      "id": "KPI-02",
+      "type": "kpi",
+      "path": "success.md",
+      "title": "KPI-02",
+      "objective": "OBJ-02"
+    },
+    "OBJ-01": {
+      "id": "OBJ-01",
+      "type": "objective",
+      "path": "success.md",
+      "title": "OBJ-01"
+    },
+    "OBJ-02": {
+      "id": "OBJ-02",
+      "type": "objective",
+      "path": "success.md",
+      "title": "OBJ-02"
+    },
+    "PRD-01": {
+      "id": "PRD-01",
+      "type": "decision",
+      "path": "decisions/product/PRD-01.md",
+      "title": "PRD-01",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "PRD-02": {
+      "id": "PRD-02",
+      "type": "decision",
+      "path": "decisions/product/PRD-02.md",
+      "title": "Which journeys matter most in the first release?",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "PRD-03": {
+      "id": "PRD-03",
+      "type": "decision",
+      "path": "decisions/product/PRD-03.md",
+      "title": "Where sources disagree, which one sets the baseline?",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "PRD-04": {
+      "id": "PRD-04",
+      "type": "decision",
+      "path": "decisions/product/PRD-04.md",
+      "title": "What does the first milestone have to show, and to whom?",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "PRD-05": {
+      "id": "PRD-05",
+      "type": "decision",
+      "path": "decisions/product/PRD-05.md",
+      "title": "Which KPIs show progress on each objective?",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "SRC-01": {
+      "id": "SRC-01",
+      "type": "source",
+      "path": "sources.md",
+      "title": "SRC-01",
+      "audience": "internal"
+    },
+    "SRC-02": {
+      "id": "SRC-02",
+      "type": "source",
+      "path": "sources.md",
+      "title": "SRC-02",
+      "audience": "client"
+    },
+    "SRC-03": {
+      "id": "SRC-03",
+      "type": "source",
+      "path": "sources.md",
+      "title": "SRC-03",
+      "audience": "internal"
+    },
+    "TECH-01": {
+      "id": "TECH-01",
+      "type": "decision",
+      "path": "decisions/tech/TECH-01.md",
+      "title": "TECH-01",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "TECH-02": {
+      "id": "TECH-02",
+      "type": "decision",
+      "path": "decisions/tech/TECH-02.md",
+      "title": "Where does the code live, and who owns it after handover?",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "TECH-03": {
+      "id": "TECH-03",
+      "type": "decision",
+      "path": "decisions/tech/TECH-03.md",
+      "title": "How do we know a piece of work is done?",
+      "status": "open",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    }
+  },
+  "gates": {
+    "G1": {
+      "id": "G1",
+      "name": "G1",
+      "stage": "activate"
+    },
+    "G2": {
+      "id": "G2",
+      "name": "G2",
+      "stage": "motivate"
+    },
+    "G3": {
+      "id": "G3",
+      "name": "G3",
+      "stage": "sustain"
+    },
+    "G4": {
+      "id": "G4",
+      "name": "G4",
+      "stage": "change"
+    }
+  },
+  "lists": {
+    "needs_a_response": [],
+    "resting_on_moved_evidence": [],
+    "test_next": [],
+    "build_on": []
+  }
+}

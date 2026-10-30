@@ -1,0 +1,47 @@
+# Checks the docs on every pull request, and on every push to main
+# regenerates docs/_generated/ and commits it if anything changed.
+# Needs Settings → Actions → General → Workflow permissions set to
+# "Read and write", unless the organisation allows the permissions below.
+name: Docs
+
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**", "scripts/**"]
+  pull_request:
+    paths: ["docs/**", "scripts/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Check the docs
+        if: github.event_name == 'pull_request'
+        run: python scripts/evidence.py --check
+
+      - name: Check the docs and regenerate the views
+        if: github.event_name != 'pull_request'
+        run: python scripts/evidence.py
+
+      - name: Commit the views if they changed
+        if: github.event_name != 'pull_request'
+        run: |
+          if [ -n "$(git status --porcelain docs/_generated)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/_generated
+            git commit -m "docs: regenerate the evidence views"
+            git push
+          fi

@@ -1,0 +1,566 @@
+{
+  "items": {
+    "BIZ-01": {
+      "id": "BIZ-01",
+      "type": "decision",
+      "path": "decisions/business/BIZ-01.md",
+      "title": "Which objectives is Pedal measured against?",
+      "status": "accepted",
+      "date": "2026-09-09",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "DES-01": {
+      "id": "DES-01",
+      "type": "decision",
+      "path": "decisions/design/DES-01.md",
+      "title": "What happens when an unlock fails?",
+      "status": "accepted",
+      "date": "2026-10-12",
+      "gate": "G2",
+      "moves": [
+        "KPI-03"
+      ],
+      "computed_impact": 3,
+      "impact_from": "from KPI-03",
+      "strength": 3.0,
+      "verdict": "supported",
+      "support_weight": 3.0,
+      "against_weight": 0.0,
+      "evidence_from": [
+        {
+          "finding": "FND-001",
+          "stance": "supports"
+        }
+      ],
+      "rests_on": [
+        "HYP-02"
+      ],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "FND-001": {
+      "id": "FND-001",
+      "type": "finding",
+      "path": "findings/FND-001.md",
+      "title": "One in five first unlocks fails",
+      "status": "active",
+      "date": "2026-10-16",
+      "gate": "G2",
+      "computed_impact": 3,
+      "impact_from": "from KPI-03",
+      "trust": 4,
+      "evidence": "analytics",
+      "frames": [
+        "product"
+      ],
+      "sources": [
+        "SRC-02"
+      ],
+      "observed": "2026-09",
+      "measurement": {
+        "kpi": "KPI-03",
+        "value": "81%",
+        "period": "2026-09",
+        "segment": "First unlocks"
+      },
+      "seed": false
+    },
+    "FND-002": {
+      "id": "FND-002",
+      "type": "finding",
+      "path": "findings/FND-002.md",
+      "title": "First-unlock success rose to 86% after the retry shipped",
+      "status": "active",
+      "date": "2026-10-28",
+      "gate": "G2",
+      "computed_impact": 3,
+      "impact_from": "from KPI-03",
+      "trust": 4,
+      "evidence": "analytics",
+      "frames": [
+        "product"
+      ],
+      "sources": [
+        "SRC-02"
+      ],
+      "observed": "2026-10",
+      "measurement": {
+        "kpi": "KPI-03",
+        "value": "86%",
+        "period": "2026-10",
+        "segment": "First unlocks"
+      },
+      "seed": false
+    },
+    "FND-003": {
+      "id": "FND-003",
+      "type": "finding",
+      "path": "findings/FND-003.md",
+      "title": "Riders decide whether to pay at their first unlock, mostly on price",
+      "status": "active",
+      "date": "2026-09-24",
+      "gate": "G3",
+      "computed_impact": 4,
+      "impact_from": "from HYP-01",
+      "trust": 3,
+      "evidence": "interview",
+      "frames": [
+        "user"
+      ],
+      "sources": [
+        "SRC-03"
+      ],
+      "observed": "2026-09-20",
+      "seed": false
+    },
+    "FND-004": {
+      "id": "FND-004",
+      "type": "finding",
+      "path": "findings/FND-004.md",
+      "title": "Paid-plan sign-ups peak on the day of the first ride",
+      "status": "active",
+      "date": "2026-10-16",
+      "gate": "G3",
+      "computed_impact": 4,
+      "impact_from": "from KPI-02",
+      "trust": 4,
+      "evidence": "analytics",
+      "frames": [
+        "product",
+        "business"
+      ],
+      "sources": [
+        "SRC-02"
+      ],
+      "observed": "2026-09",
+      "measurement": {
+        "kpi": "KPI-02",
+        "value": "12%",
+        "period": "2026-09",
+        "segment": "New riders"
+      },
+      "seed": false
+    },
+    "FND-005": {
+      "id": "FND-005",
+      "type": "finding",
+      "path": "findings/FND-005.md",
+      "title": "Most first-week support tickets are about unlocking",
+      "status": "active",
+      "date": "2026-10-03",
+      "gate": "G2",
+      "computed_impact": 3,
+      "impact_from": "from HYP-02",
+      "trust": 2,
+      "evidence": "audit",
+      "frames": [
+        "product"
+      ],
+      "sources": [
+        "SRC-05"
+      ],
+      "observed": "2026-09",
+      "seed": false
+    },
+    "FND-006": {
+      "id": "FND-006",
+      "type": "finding",
+      "path": "findings/FND-006.md",
+      "title": "Occasional riders cite price and dock distance about equally",
+      "status": "active",
+      "date": "2026-09-25",
+      "computed_impact": 5,
+      "impact_from": "from HYP-04",
+      "trust": 2,
+      "evidence": "desk",
+      "frames": [
+        "market"
+      ],
+      "sources": [
+        "SRC-04"
+      ],
+      "observed": "2026-08",
+      "seed": false
+    },
+    "FND-007": {
+      "id": "FND-007",
+      "type": "finding",
+      "path": "findings/FND-007.md",
+      "title": "Some riders check air quality in the app before deciding to ride",
+      "status": "active",
+      "date": "2026-10-27",
+      "trust": 2,
+      "evidence": "interview",
+      "frames": [
+        "user"
+      ],
+      "sources": [
+        "SRC-03"
+      ],
+      "observed": "2026-09-20",
+      "seed": true
+    },
+    "FND-008": {
+      "id": "FND-008",
+      "type": "finding",
+      "path": "findings/FND-008.md",
+      "title": "The client reports dock outages spike on Monday mornings",
+      "status": "active",
+      "date": "2026-09-03",
+      "gate": "G5",
+      "computed_impact": 4,
+      "impact_from": "from HYP-03",
+      "trust": 1,
+      "evidence": "stakeholder",
+      "frames": [
+        "business"
+      ],
+      "sources": [
+        "SRC-01"
+      ],
+      "observed": "2026-09-02",
+      "seed": false
+    },
+    "FND-009": {
+      "id": "FND-009",
+      "type": "finding",
+      "path": "findings/FND-009.md",
+      "title": "Annual-plan riders ride twice as often as monthly riders",
+      "status": "active",
+      "date": "2026-10-29",
+      "computed_impact": 4,
+      "impact_from": "from HYP-01",
+      "trust": 3,
+      "evidence": "analytics",
+      "frames": [
+        "business"
+      ],
+      "sources": [
+        "SRC-02"
+      ],
+      "observed": "2026-10",
+      "seed": false
+    },
+    "HYP-01": {
+      "id": "HYP-01",
+      "type": "hypothesis",
+      "path": "hypotheses/HYP-01.md",
+      "title": "Riders choose a paid plan once they have taken three rides",
+      "status": "active",
+      "date": "2026-09-02",
+      "gate": "G3",
+      "moves": [
+        "OBJ-02"
+      ],
+      "held_by": "client",
+      "stated_confidence": 5,
+      "computed_impact": 4,
+      "impact_from": "from OBJ-02",
+      "strength": 5,
+      "verdict": "contradicted",
+      "support_weight": 0.0,
+      "against_weight": 5.0,
+      "evidence_from": [
+        {
+          "finding": "FND-003",
+          "stance": "contradicts"
+        },
+        {
+          "finding": "FND-004",
+          "stance": "contradicts"
+        }
+      ],
+      "rests_on": [],
+      "rested_on_by": [
+        "PRD-01"
+      ],
+      "notes": [
+        "Starting confidence 5, but the evidence has moved against it.",
+        "1 more finding is waiting for review, and not counted yet."
+      ]
+    },
+    "HYP-02": {
+      "id": "HYP-02",
+      "type": "hypothesis",
+      "path": "hypotheses/HYP-02.md",
+      "title": "A failed first unlock loses the rider for good",
+      "status": "active",
+      "date": "2026-09-10",
+      "gate": "G2",
+      "moves": [
+        "KPI-03"
+      ],
+      "held_by": "ustwo",
+      "stated_confidence": 3,
+      "computed_impact": 3,
+      "impact_from": "from KPI-03",
+      "strength": 4.0,
+      "verdict": "supported",
+      "support_weight": 4.0,
+      "against_weight": 0.0,
+      "evidence_from": [
+        {
+          "finding": "FND-001",
+          "stance": "supports"
+        },
+        {
+          "finding": "FND-005",
+          "stance": "supports"
+        }
+      ],
+      "rests_on": [],
+      "rested_on_by": [
+        "DES-01"
+      ],
+      "notes": []
+    },
+    "HYP-03": {
+      "id": "HYP-03",
+      "type": "hypothesis",
+      "path": "hypotheses/HYP-03.md",
+      "title": "Commuters will pay more for a guaranteed dock at peak times",
+      "status": "active",
+      "date": "2026-09-02",
+      "gate": "G5",
+      "moves": [
+        "OBJ-02"
+      ],
+      "held_by": "client",
+      "stated_confidence": 4,
+      "computed_impact": 4,
+      "impact_from": "from OBJ-02",
+      "strength": 0.5,
+      "verdict": "supported",
+      "support_weight": 0.5,
+      "against_weight": 0.0,
+      "evidence_from": [
+        {
+          "finding": "FND-008",
+          "stance": "supports"
+        }
+      ],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "HYP-04": {
+      "id": "HYP-04",
+      "type": "hypothesis",
+      "path": "hypotheses/HYP-04.md",
+      "title": "Price, not dock distance, is what stops occasional riders",
+      "status": "active",
+      "date": "2026-09-25",
+      "gate": "G3",
+      "moves": [
+        "OBJ-01"
+      ],
+      "held_by": "ustwo",
+      "stated_confidence": 2,
+      "computed_impact": 5,
+      "impact_from": "from OBJ-01",
+      "strength": 1.0,
+      "verdict": "contested",
+      "support_weight": 0.5,
+      "against_weight": 0.5,
+      "evidence_from": [
+        {
+          "finding": "FND-006",
+          "stance": "mixed"
+        }
+      ],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "KPI-01": {
+      "id": "KPI-01",
+      "type": "kpi",
+      "path": "success.md",
+      "title": "Riders who ride at least once a week",
+      "computed_impact": 5,
+      "objective": "OBJ-01",
+      "baseline": "4,100 (Sep 2026)",
+      "target": "10,000 by Jun 2027",
+      "readiness": "track now"
+    },
+    "KPI-02": {
+      "id": "KPI-02",
+      "type": "kpi",
+      "path": "success.md",
+      "title": "New riders on a paid plan within 14 days",
+      "gate": "G3",
+      "computed_impact": 4,
+      "objective": "OBJ-02",
+      "baseline": "12% (Sep 2026)",
+      "target": "20%",
+      "readiness": "track now"
+    },
+    "KPI-03": {
+      "id": "KPI-03",
+      "type": "kpi",
+      "path": "success.md",
+      "title": "First unlocks that succeed",
+      "gate": "G2",
+      "computed_impact": 3,
+      "objective": "OBJ-03",
+      "baseline": "81% (Sep 2026)",
+      "target": "95%",
+      "readiness": "tag in build"
+    },
+    "OBJ-01": {
+      "id": "OBJ-01",
+      "type": "objective",
+      "path": "success.md",
+      "title": "Grow weekly active riders",
+      "computed_impact": 5,
+      "rank": "north-star",
+      "goal": "A"
+    },
+    "OBJ-02": {
+      "id": "OBJ-02",
+      "type": "objective",
+      "path": "success.md",
+      "title": "More new riders on a paid plan",
+      "stage": "motivate",
+      "gate": "G3",
+      "computed_impact": 4,
+      "rank": "primary",
+      "goal": "A"
+    },
+    "OBJ-03": {
+      "id": "OBJ-03",
+      "type": "objective",
+      "path": "success.md",
+      "title": "Fewer riders lost at their first unlock",
+      "stage": "activate",
+      "gate": "G2",
+      "computed_impact": 3,
+      "rank": "secondary",
+      "goal": "A"
+    },
+    "PRD-01": {
+      "id": "PRD-01",
+      "type": "decision",
+      "path": "decisions/product/PRD-01.md",
+      "title": "Which plan do new riders see first?",
+      "status": "accepted",
+      "date": "2026-10-08",
+      "gate": "G3",
+      "moves": [
+        "OBJ-02"
+      ],
+      "computed_impact": 4,
+      "impact_from": "from OBJ-02",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [
+        "HYP-01"
+      ],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "PRD-02": {
+      "id": "PRD-02",
+      "type": "decision",
+      "path": "decisions/product/PRD-02.md",
+      "title": "Which KPIs show progress on each objective?",
+      "status": "accepted",
+      "date": "2026-09-16",
+      "strength": 0,
+      "verdict": "untested",
+      "support_weight": 0,
+      "against_weight": 0,
+      "evidence_from": [],
+      "rests_on": [],
+      "rested_on_by": [],
+      "notes": []
+    },
+    "SRC-01": {
+      "id": "SRC-01",
+      "type": "source",
+      "path": "sources.md",
+      "title": "Kickoff notes",
+      "audience": "internal"
+    },
+    "SRC-02": {
+      "id": "SRC-02",
+      "type": "source",
+      "path": "sources.md",
+      "title": "Beta analytics dashboard",
+      "audience": "client"
+    },
+    "SRC-03": {
+      "id": "SRC-03",
+      "type": "source",
+      "path": "sources.md",
+      "title": "Rider interviews, round 1",
+      "audience": "internal"
+    },
+    "SRC-04": {
+      "id": "SRC-04",
+      "type": "source",
+      "path": "sources.md",
+      "title": "City transport survey 2026",
+      "audience": "client"
+    },
+    "SRC-05": {
+      "id": "SRC-05",
+      "type": "source",
+      "path": "sources.md",
+      "title": "Support tickets, first-week riders",
+      "audience": "internal"
+    }
+  },
+  "gates": {
+    "G1": {
+      "id": "G1",
+      "name": "Open the app",
+      "stage": "activate"
+    },
+    "G2": {
+      "id": "G2",
+      "name": "Unlock a first bike",
+      "stage": "activate"
+    },
+    "G3": {
+      "id": "G3",
+      "name": "Choose a plan",
+      "stage": "motivate"
+    },
+    "G4": {
+      "id": "G4",
+      "name": "Ride again within a week",
+      "stage": "sustain"
+    },
+    "G5": {
+      "id": "G5",
+      "name": "Commute by bike",
+      "stage": "change"
+    }
+  },
+  "lists": {
+    "needs_a_response": [
+      "HYP-01"
+    ],
+    "resting_on_moved_evidence": [
+      "PRD-01"
+    ],
+    "test_next": [
+      "HYP-04",
+      "HYP-03"
+    ],
+    "build_on": [
+      "HYP-02"
+    ]
+  }
+}
